@@ -1,0 +1,21 @@
+{
+    "name": "Guess the Number Game",
+    "short_name": "Number Game",
+    "start_url": "Script/guess_number.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4a90e2",
+    "icons": [
+      {
+        "src": "Script/Assets/icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "Script/Assets/icon-large.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
