@@ -1,0 +1,236 @@
+/* General Styles */
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: paleturquoise;
+  color: #333;
+}
+
+body.night-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+/* Game Container */
+.game-container {
+  max-width: 640px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.game-container.night-mode {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #4a90e2;
+}
+
+header h1.night-mode {
+  color: #78a0c8;
+}
+
+/* Buttons */
+#toggle-night-mode {
+  display: block;
+  width: 150px;
+}
+
+.button {
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button.night-mode {
+  background-color: #78a0c8;
+}
+
+.button:hover {
+  background-color: #357abd;
+}
+
+.button:disabled {
+  background-color: #dcdcdc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+#guess {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+#reset-game {
+  background-color: #ff6b6b;
+  margin-left: 10px;
+}
+
+#reset-game:hover {
+  background-color: #e74c3c;
+}
+
+.next-round-container {
+  margin-top: 20px;
+}
+
+/* Round and Label Styles */
+.rounds {
+  margin-bottom: 30px;
+}
+
+.round-label {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff6b6b;
+}
+
+.round-label.night-mode {
+  color: #ff6b6b;
+}
+
+.guess-label, .score-label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #34495e;
+}
+
+.guess-label.night-mode, .score-label.night-mode {
+  color: #ff6b6b;
+}
+
+/* Guessing Area */
+.guess {
+  min-width: 260px;
+  height: 320px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.guess.night-mode {
+  background-color: #555;
+  color: #fff;
+}
+
+.guessing-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* Input Styles */
+.guess input {
+  height: 80px;
+  width: 80px;
+  font-size: 28px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: #f0f0f0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Number Controls */
+.number-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.number-control {
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.number-control.night-mode {
+  background-color: #4a90e2;
+}
+
+.number-control:disabled {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+.number-control:hover:not(:disabled) {
+  background-color: #357abd;
+}
+
+/* Instructions Section */
+.instructions {
+  background-color: #ff6b6b;
+  padding: 20px;
+  color: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructions.night-mode {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.instruction {
+  width: 180px;
+}
+
+.instructions h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Winning Text */
+.winning-text {
+  color: #ff6b6b;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.guess-title p {
+  margin: 10px 0;
+}
+
+/* Target and Guess Display */
+#computer-guess, #target-number {
+  font-size: 50px;
+  font-weight: 700;
+  color: #4a90e2;
+}
