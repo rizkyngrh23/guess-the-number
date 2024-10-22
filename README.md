@@ -45,11 +45,5 @@ To run this game locally, follow these steps:
    ```
    *Make sure you download the css and js too!*
 
-## Play the Game
-
-You can play the Guess the Number game by clicking the link below:
-
-[Play Guess the Number Game](./guess_number.html)
-
 
 
