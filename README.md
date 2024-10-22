@@ -1,6 +1,6 @@
 # Guess the Number!
 
-**Guess the Number!** is a simple interactive game where a player competes against a computer by guessing a randomly generated number between 0 and 9. The game includes score tracking, round advancement, and a night mode for a better user experience in different lighting environments.
+**Guess the Number!** is a simple interactive game where a player competes against a computer by guessing a randomly generated number between 0 and 9. The game includes score tracking, round advancement, and a night mode (Soon!) for a better user experience in different lighting environments.
 
 **Preview**
    <div align="center">
