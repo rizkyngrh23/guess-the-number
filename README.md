@@ -45,5 +45,8 @@ To run this game locally, follow these steps:
    ```
    *Make sure you download the css and js too!*
 
+## Play the Game!
+You can play the game online at [Guess the Number!](https://guess-the-number23.netlify.app/). 
+
 
 
