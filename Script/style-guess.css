@@ -1,4 +1,3 @@
-/* General Styles */
 * {
   font-family: 'Nunito Sans', sans-serif;
   box-sizing: border-box;
@@ -16,7 +15,6 @@ body.night-mode {
   color: #f0f0f0;
 }
 
-/* Game Container */
 .game-container {
   max-width: 640px;
   margin: 30px auto;
@@ -32,7 +30,6 @@ body.night-mode {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Header */
 header h1 {
   font-size: 36px;
   font-weight: 700;
@@ -44,7 +41,6 @@ header h1.night-mode {
   color: #78a0c8;
 }
 
-/* Buttons */
 #toggle-night-mode {
   display: block;
   width: 150px;
@@ -92,9 +88,10 @@ header h1.night-mode {
 
 .next-round-container {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Round and Label Styles */
 .rounds {
   margin-bottom: 30px;
 }
@@ -119,7 +116,6 @@ header h1.night-mode {
   color: #ff6b6b;
 }
 
-/* Guessing Area */
 .guess {
   min-width: 260px;
   height: 320px;
@@ -139,9 +135,9 @@ header h1.night-mode {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-/* Input Styles */
 .guess input {
   height: 80px;
   width: 80px;
@@ -158,7 +154,6 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-/* Number Controls */
 .number-controls {
   display: flex;
   justify-content: center;
@@ -192,10 +187,9 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #357abd;
 }
 
-/* Instructions Section */
 .instructions {
   background-color: #ff6b6b;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
   margin-top: 30px;
   display: flex;
@@ -209,15 +203,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .instruction {
-  width: 180px;
+  width: 150px;
 }
 
 .instructions h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* Winning Text */
 .winning-text {
   color: #ff6b6b;
   font-size: 24px;
@@ -228,9 +221,53 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 10px 0;
 }
 
-/* Target and Guess Display */
 #computer-guess, #target-number {
   font-size: 50px;
   font-weight: 700;
   color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+  .guessing-area {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .guess {
+    width: 100%;
+    height: auto;
+  }
+
+  .guess input {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .number-control {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  #computer-guess, #target-number {
+    font-size: 36px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .instructions {
+    padding: 5px;
+  }
+
+  .instruction {
+    width: 100%;
+  }
+
+  .instructions h3 {
+    font-size: 14px;
+  }
 }
